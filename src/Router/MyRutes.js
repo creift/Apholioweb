@@ -1,5 +1,5 @@
 import React from "react";
-import {Routes,Rooute,BrowserRouter,NavLink, Route}from "react-router-dom";
+import {Routes,BrowserRouter,Route}from "react-router-dom";
 import {Inicio} from "../components/Inicio.js";
 import {Portafolio} from "../components/Portafolio.js";
 import {Servicios} from "../components/Servicios.js";
