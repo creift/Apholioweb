@@ -7,5 +7,5 @@ export const Footer=()=> {
             <hr/>
             PORTAFOLIO WEB FREDY ALBERTO RODRIGUEZ HERRERA &copy; MASTER EN REACT - 2026
         </div>
-    )
+    );
 }

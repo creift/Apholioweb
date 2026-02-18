@@ -1,17 +1,63 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-body{
+  font-family: Arial, Helvetica, sans-serif;
+  
   margin: 2rem;
 }
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;/*hack para box model*/
+    scroll-snap-type: y mandatory;
+}
+
+
+*, * :before, *:after{
+    box-sizing: inherit;
+}
+
+:root {
+  --primario: #89030D;
+  --blanco: #ffffff;
+    /** --obscuro: #212121;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisclaro: #dfe9f3; **/
+}
+
+
+
+nav{
+  background-color: var(--primario);
+  padding: 15px;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  justify-content: center;
+}
+
+nav ul{
+  list-style: none; /*quita los puntos*/
+  display: flex;  /*pone los li alineados*/
+  gap: 20px;    /*espacio entre los links*/
+  margin: 0.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+  
+}
+
+nav ul li a{
+  text-decoration: none; /*quita el subrallado*/
+  list-style: none; 
+  color: white;  /*texto blanco*/
+  font-weight: bold;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+nav ul li a:hover {
+  color: black; /*cambia de color al pasar el mouse*/
+}
+
+

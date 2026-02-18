@@ -1,13 +1,12 @@
 import React from "react";
 import {Routes,Rooute,BrowserRouter,NavLink, Route}from "react-router-dom";
-import {Inicio} from "../componentes/Inicio.js";
-import {Portafolio} from "../componentes/Portafolio.js";
-import {Servicios} from "../componentes/Servicios.js";
-import {Curriculum} from "../componentes/Curriculum.js";
-import {Contacto} from "../componentes/Contacto.js";
-import { HeaderNav } from "../componentes/Layout/HeaderNav.js";
-import { Footer } from "../componentes/Layout/Footer.js";
-
+import {Inicio} from "../components/Inicio.js";
+import {Portafolio} from "../components/Portafolio.js";
+import {Servicios} from "../components/Servicios.js";
+import {Curriculum} from "../components/Curriculum.js";
+import {Contacto} from "../components/Contacto.js";
+import { HeaderNav } from "../components/Layout/HeaderNav.js";
+import { Footer } from "../components/Layout/Footer.js";
 
 export const MisRutas= () => {
     return(
@@ -27,5 +26,5 @@ export const MisRutas= () => {
         {/*Footer */}
         <Footer/>
         </BrowserRouter>
-    )
+    );
 }

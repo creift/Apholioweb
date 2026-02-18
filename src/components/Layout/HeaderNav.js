@@ -34,5 +34,5 @@ export const HeaderNav = () =>{
             </nav>
             <hr/>
         </header>
-    )
+    );
 }

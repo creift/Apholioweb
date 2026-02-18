@@ -3,27 +3,48 @@
 
 A personal portfolio web application built using React. Designed to present my projects, technical skills, and development progress as I pursue my first role in technology.
 
-## 🚀 Live Demo
+--Live Demo
 Coming soon...
 
-## 🛠 Tech Stack
+Tech Stack
 - React
 - JavaScript (ES6+)
 - CSS
 - React Router
 
-## 📂 Project Structure
+--Project Structure
 
-src/
- ├── components/
- ├── router/
- └── App.js
+apholioweb/
+├── public/
+├── src/
+│ ├── componentes/
+│ │ ├── Layout/
+│ │ │ ├── Footer.js
+│ │ │ ├── HeaderNav.js
+│ │ ├── Contacto.js
+│ │ ├── Curriculum.js
+│ │ ├── Inicio.js
+│ │ ├── Portafolio.js
+│ │ ├── Servicios.js
+│ │
+│ ├── Router/
+│ │ ├── MyRoutes.js
+│ │
+│ ├── App.js
+│ ├── App.css
+│ ├── index.js
+│ ├── index.css
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
 
-## ⚙️ Installation
+Installation
 
 Clone the repository:
 
-git clone https://github.com/your-username/portfolio-react.git
+git clone https://github.com/creift/Apholioweb.git
 
 Install dependencies:
 
@@ -33,13 +54,13 @@ Run the development server:
 
 npm start
 
-## 📌 Features
+--Features
 
 - Component-based architecture
 - Responsive layout
 - Client-side routing
 - Scalable structure for future improvements
 
-## 📈 Status
+--Status
 
 This project is actively being developed and continuously improved.
