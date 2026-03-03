@@ -91,20 +91,20 @@ nav ul li a:hover {
 
 @media (max-width: 480px){
   body{
-    margin: 0rem;
+    margin: 1rem;
     background-attachment: fixed;
   }
   .header{
-    min-height: 260px;
-    padding: 18px 12px;
-    background-position: center top; 
-    border-radius: 0%;
+    min-height: 26rem;
+    padding: 1.8rem 1.2rem;
+    
   }
 
   .logo{
     flex-direction: column;
     text-align: center;
-    gap: 1rem;
+    align-items: center;
+    gap: 0.2rem;
   }
 
   .logo-img{
@@ -114,40 +114,57 @@ nav ul li a:hover {
   .logo h3{
     font-size: 1.6rem;
     letter-spacing: 0.1rem;
+    color: black;
+  }
+
+  nav{
+    min-width: 100%;
+    border-radius: 0;
   }
 
   nav ul{
-    gap: 1rem;
+    margin: 0rem;
+    gap: 0rem;
+    padding: 0rem;
   }
 
   nav a{
-    padding: 0.8rem 1rem; 
-    font-size: 1.4rem;
+    padding: 0.8rem 0.4rem; 
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 768px){
   .header{
-    min-height: 240px;
-    padding: 22px 14px;
+    min-height: 24rem;
+    padding: 0rem 0rem;
+    margin: 0.1rem;
   }
 
   .logo-img{
-    width: 65px;
+    width: 6.5rem;
   }
 
   .logo h3{
-    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  nav a{
+    padding: 0.8rem 0.4rem; 
+    font-size: 1.3rem;
   }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1024px){
   .header{
-    min-height: 280px;
+    min-height: 28rem;
   }
 
   .logo h3{
-    font-size: 22px;
+    font-size: 2.2rem;
+  }
+  nav a{
+    padding: 0.8rem 0.4rem; 
+    font-size: 1.3rem;
   }
 }
 
