@@ -89,11 +89,16 @@ nav ul li a:hover {
 
 /*media queries*/
 
-@media (max-width: 479px){
+@media (max-width: 480px){
+  body{
+    margin: 0rem;
+    background-attachment: fixed;
+  }
   .header{
     min-height: 260px;
     padding: 18px 12px;
-    background-position: center top; /* suele verse mejor en móvil */
+    background-position: center top; 
+    border-radius: 0%;
   }
 
   .logo{
@@ -116,7 +121,33 @@ nav ul li a:hover {
   }
 
   nav a{
-    padding: 8px 1rem; /* más “tap friendly” */
-    font-size: 14px;
+    padding: 0.8rem 1rem; 
+    font-size: 1.4rem;
   }
 }
+
+@media (max-width: 768px){
+  .header{
+    min-height: 240px;
+    padding: 22px 14px;
+  }
+
+  .logo-img{
+    width: 65px;
+  }
+
+  .logo h3{
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px){
+  .header{
+    min-height: 280px;
+  }
+
+  .logo h3{
+    font-size: 22px;
+  }
+}
+
