@@ -1,9 +1,9 @@
 import React from "react";  
 
-export const Curriculum = () => {
+export const MyResumes = () => {
     return(
         <div>
-            Curriculum
+            MyResumes
         </div>
     );
 }

@@ -19,27 +19,27 @@ export const HeaderNav = () =>{
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/inicio">Inicio</NavLink>
+                        <NavLink to="/Home">Home</NavLink>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <NavLink to="/Servicios">Servicios</NavLink>
+                        <NavLink to="/Services">Services</NavLink>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <NavLink to="/Curriculum">Curriculum</NavLink>
+                        <NavLink to="/MyResumes">My Resumes</NavLink>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <NavLink to="/Portafolio">Portafolio</NavLink>
+                        <NavLink to="/Portfolio">Portfolio</NavLink>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <NavLink to="/Contacto">Contacto</NavLink>
+                        <NavLink to="/Contact">Contact</NavLink>
                     </li>
                 </ul>
             </nav>

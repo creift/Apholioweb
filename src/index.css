@@ -1,13 +1,10 @@
-body {
-  margin: 0;
+body{
+  background-color: var(--peach-glow);
   font-family: Arial, Helvetica, sans-serif;
   margin: 2rem;
-  background-image: url("../src/assets/Images/BackgrountHeader.jpg");
-  background-size: cover;
-  background-position: contain;
-  background-repeat: no-repeat;
-  color: white;
+  color: black;
 }
+
 html {
     font-size: 62.5%; /* con esto se iguala 1rem = 1rem */
     box-sizing: border-box;/*hack para box model*/
@@ -22,13 +19,35 @@ html {
 }
 
 :root {
+  --peach-glow: #efc69bff;
   --primario: #89030D;
+  /**--cherry-rose: #af1b3fff;**/
+  --vintage-grape: #473144ff;
+  --khaki-beige: #ccb69bff;
+  --light-bronze: #df9b6dff;
 }
 
 .header {
   position: relative;
+  background-image: url("../src/assets/Images/BackgrountHeader.jpg");
+  background-size: cover;
+  background-position: contain;
+  background-repeat: no-repeat;
   
 }
+.header::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.header .logo,
+.header nav {
+  position: relative;
+  z-index: 1;
+}
+
 .header .logo{
   flex-grow: 2;
   display: flex;
@@ -52,7 +71,7 @@ html {
   margin: 1rem;
 }
 
-nav{
+.header nav{
   background-color: var(--primario);
   padding: 1.5rem;
   display: flex;
@@ -63,7 +82,7 @@ nav{
   justify-content: center;
 }
 
-nav ul{
+.header nav ul{
   list-style: none; /*quita los puntos*/
   display: flex;  /*pone los li alineados*/
   gap: 2rem;    /*espacio entre los links*/
@@ -73,7 +92,7 @@ nav ul{
   
 }
 
-nav ul li a{
+.header nav ul li a{
   text-decoration: none; /*quita el subrallado*/
   list-style: none; 
   color: white;  /*texto blanco*/
@@ -82,22 +101,80 @@ nav ul li a{
   justify-content: center;
 }
 
-nav ul li a:hover {
+.header nav ul li a:hover {
   color: black; /*cambia de color al pasar el mouse*/
 }
+
+.hero{
+  background: var(--khaki-beige);
+  color: #222;
+  margin: 0 auto;
+  
+}
+.hero h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.hero p{
+  max-width: 70rem;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
+.hero nav{
+  
+  
+  padding: 1.5rem;
+  margin: 1rem;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  justify-content: center;
+}
+
+.hero  ul{
+  list-style: none; /*quita los puntos*/
+  display: flex;  /*pone los li alineados*/
+  gap: 2rem;    /*espacio entre los links*/
+  margin: 0.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+  
+}
+
+.hero  ul li a{
+  background-color: var(--primario);
+  text-decoration: none; /*quita el subrallado*/
+  list-style: none; 
+  color: white;  /*texto blanco*/
+  font-weight: bold;
+  transition: 0.3s;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.footer h3{
+    display: block;
+    justify-self: center;
+    background: #1A1A1A;
+    color: white;
+  }
 
 
 /*media queries*/
 
 @media (max-width: 480px){
+  
+  .header {
+    min-height: 23rem;
+  }
   body{
     margin: 1rem;
     background-attachment: fixed;
-  }
-  .header{
-    min-height: 26rem;
-    padding: 1.8rem 1.2rem;
-    
   }
 
   .logo{
@@ -114,7 +191,7 @@ nav ul li a:hover {
   .logo h3{
     font-size: 1.6rem;
     letter-spacing: 0.1rem;
-    color: black;
+    color: white;
   }
 
   nav{
@@ -129,16 +206,24 @@ nav ul li a:hover {
   }
 
   nav a{
-    padding: 0.8rem 0.4rem; 
+    padding: 0.8rem 0.2rem; 
     font-size: 1rem;
+  }
+  
+  .hero h1{
+    color: black;
+    text-transform: uppercase;
+  }
+
+  .footer h3{
+    font-size: 0.69rem;
   }
 }
 
-@media (max-width: 768px){
+@media (min-width: 768px){
+
   .header{
-    min-height: 24rem;
-    padding: 0rem 0rem;
-    margin: 0.1rem;
+    min-height: 17rem;
   }
 
   .logo-img{
@@ -150,13 +235,17 @@ nav ul li a:hover {
   }
   nav a{
     padding: 0.8rem 0.4rem; 
-    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+
+  .footer h3{
+    font-size: 0.9rem;
   }
 }
 
 @media (min-width: 1024px){
   .header{
-    min-height: 28rem;
+    min-height: 18rem;
   }
 
   .logo h3{
@@ -164,6 +253,11 @@ nav ul li a:hover {
   }
   nav a{
     padding: 0.8rem 0.4rem; 
+    font-size: 1.3rem;
+  }
+  .footer h3{
+    display: block;
+    justify-self: center;
     font-size: 1.3rem;
   }
 }
