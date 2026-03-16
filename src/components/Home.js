@@ -29,7 +29,7 @@ export const Home = () => {
 
       Feel free to explore my portfolio and get in touch if you'd like to collaborate or learn more about my work.
       </p>
-
+      
       <nav>
         <ul> 
           <li>

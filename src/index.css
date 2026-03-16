@@ -12,6 +12,12 @@ html {
     
 }
 
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
 
 *, * :before, *:after{
     box-sizing: inherit;
@@ -156,6 +162,36 @@ html {
   padding: 2rem;
   border-radius: 2rem;
 }
+
+form{
+  display: grid;
+  justify-content: center;
+}
+form label{
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+form input, textarea{
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+form button{
+  background-color: #89030D;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
 
 .footer h3{
     display: block;

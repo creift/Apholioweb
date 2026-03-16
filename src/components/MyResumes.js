@@ -4,7 +4,7 @@ export const MyResumes = () => {
     return(
         <div>
             <h1>
-            MyResumes
+            My Resumes
             </h1>
         </div>
     );
